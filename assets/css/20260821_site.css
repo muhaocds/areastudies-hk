@@ -280,6 +280,18 @@ h1 {
   text-decoration: underline;
 }
 
+.contact-address {
+  margin-top: 24px;
+}
+
+.contact-address address {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.8;
+}
+
 .profile-facts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
