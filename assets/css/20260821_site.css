@@ -248,6 +248,39 @@ h1 {
   line-height: 1.65;
 }
 
+.contact-info {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.contact-label {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.contact-list a {
+  color: var(--accent);
+  font-family: var(--serif);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+  text-decoration: underline;
+}
+
 .profile-facts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
