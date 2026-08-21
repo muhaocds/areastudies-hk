@@ -3,197 +3,124 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="区域国别研究静态网站部署测试页">
+    <meta name="description" content="穆浩，天津大学外国语学院区域国别学博士研究生，关注区域国别学、批评话语研究与跨文化研究。">
     <meta name="color-scheme" content="light">
-    <title>区域国别研究｜站点测试</title>
-    <style>
-      :root {
-        --background: #f3f1eb;
-        --surface: #faf9f5;
-        --ink: #1d2522;
-        --muted: #66706b;
-        --line: #d7d8d1;
-        --accent: #9b493f;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        background: var(--background);
-      }
-
-      body {
-        min-height: 100vh;
-        min-height: 100dvh;
-        margin: 0;
-        color: var(--ink);
-        background:
-          linear-gradient(90deg, transparent 0 49.8%, rgba(29, 37, 34, 0.04) 49.8% 50.2%, transparent 50.2%),
-          var(--background);
-        font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
-      }
-
-      main {
-        width: min(1120px, calc(100% - 40px));
-        min-height: 100vh;
-        min-height: 100dvh;
-        margin: 0 auto;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-      }
-
-      header,
-      footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-        padding: 28px 0;
-        border-color: var(--line);
-        color: var(--muted);
-        font-size: 13px;
-        letter-spacing: 0.08em;
-      }
-
-      header {
-        border-bottom: 1px solid var(--line);
-      }
-
-      footer {
-        border-top: 1px solid var(--line);
-      }
-
-      .brand {
-        color: var(--ink);
-        font-weight: 650;
-      }
-
-      .hero {
-        display: grid;
-        grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
-        align-items: center;
-        gap: clamp(48px, 8vw, 120px);
-        padding: 80px 0;
-      }
-
-      .eyebrow {
-        margin: 0 0 24px;
-        color: var(--accent);
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        max-width: 10ch;
-        margin: 0;
-        font-size: clamp(48px, 8vw, 92px);
-        font-weight: 620;
-        letter-spacing: -0.07em;
-        line-height: 0.98;
-      }
-
-      .summary {
-        max-width: 36rem;
-        margin: 32px 0 0;
-        color: var(--muted);
-        font-size: clamp(16px, 2vw, 19px);
-        line-height: 1.8;
-      }
-
-      .status {
-        padding: 28px 0;
-        border-top: 1px solid var(--ink);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .status-label {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin: 0 0 28px;
-        color: var(--muted);
-        font-size: 13px;
-        letter-spacing: 0.08em;
-      }
-
-      .dot {
-        width: 9px;
-        height: 9px;
-        border-radius: 50%;
-        background: #527b62;
-        box-shadow: 0 0 0 5px rgba(82, 123, 98, 0.12);
-      }
-
-      .status strong {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 22px;
-        font-weight: 650;
-      }
-
-      .status p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 14px;
-        line-height: 1.7;
-      }
-
-      @media (max-width: 760px) {
-        main {
-          width: min(100% - 32px, 1120px);
-        }
-
-        header,
-        footer {
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 8px;
-        }
-
-        .hero {
-          grid-template-columns: 1fr;
-          gap: 56px;
-          padding: 64px 0;
-        }
-
-        h1 {
-          max-width: 8ch;
-          font-size: clamp(48px, 16vw, 72px);
-        }
-      }
-    </style>
+    <title>穆浩｜区域国别研究</title>
+    <link rel="stylesheet" href="assets/css/20260821_site.css">
   </head>
   <body>
-    <main>
-      <header>
-        <span class="brand">AREA STUDIES</span>
-        <span>HONG KONG · OSS</span>
-      </header>
+    <a class="skip-link" href="#main-content">跳至主要内容</a>
 
-      <section class="hero" aria-labelledby="page-title">
-        <div>
-          <p class="eyebrow">Deployment test</p>
-          <h1 id="page-title">区域国别研究</h1>
-          <p class="summary">
-            这是网站的第一张测试页面，用于验证阿里云 OSS 静态托管、域名解析与 HTTPS 访问链路。
-          </p>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="穆浩个人学术主页">
+        <span class="brand-mark" aria-hidden="true">MH</span>
+        <span class="brand-text">
+          <strong>穆浩</strong>
+          <small>区域国别研究</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="主要导航">
+        <a class="is-current" href="index.html" aria-current="page">首页</a>
+        <a href="publications/">学术论文</a>
+        <a href="conferences/">学术会议</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero page-shell" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Academic Profile · 学术主页</p>
+          <h1 id="page-title">穆浩</h1>
+          <p class="hero-role">天津大学外国语学院<br>区域国别学博士研究生</p>
         </div>
 
-        <aside class="status" aria-label="部署状态">
-          <p class="status-label"><span class="dot" aria-hidden="true"></span>部署状态</p>
-          <strong>GitHub 自动部署已启用</strong>
-          <p>此页面已通过 GitHub Actions 自动同步至阿里云 OSS。</p>
+        <aside class="identity-note" aria-label="个人信息摘要">
+          <p class="note-index">01 / PROFILE</p>
+          <p>立足语言、话语与文化的交叉视角，关注不同区域与社会之间的知识生产、意义建构和跨文化互动。</p>
+          <span class="location">TIANJIN · CHINA</span>
         </aside>
       </section>
 
-      <footer>
-        <span>AREASTUDIES.CN</span>
-        <span>INITIAL TEST PAGE · 2026</span>
-      </footer>
+      <section class="about-section page-shell" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <h2 id="about-title">我是谁</h2>
+          <p>About me</p>
+        </div>
+
+        <div class="about-content">
+          <p class="lead">我叫穆浩，现就读于天津大学外国语学院，攻读区域国别学博士。</p>
+          <div class="profile-facts">
+            <div>
+              <span>所在院校</span>
+              <strong>天津大学</strong>
+            </div>
+            <div>
+              <span>所在学院</span>
+              <strong>外国语学院</strong>
+            </div>
+            <div>
+              <span>培养阶段</span>
+              <strong>博士在读</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-section page-shell" aria-labelledby="research-title">
+        <div class="section-heading section-heading-light">
+          <p class="section-number">02</p>
+          <h2 id="research-title">主要研究领域</h2>
+          <p>Research interests</p>
+        </div>
+
+        <ol class="research-list">
+          <li>
+            <span>01</span>
+            <strong>区域国别学</strong>
+            <small>Area Studies</small>
+          </li>
+          <li>
+            <span>02</span>
+            <strong>批评话语研究</strong>
+            <small>Critical Discourse Studies</small>
+          </li>
+          <li>
+            <span>03</span>
+            <strong>跨文化研究</strong>
+            <small>Intercultural Studies</small>
+          </li>
+        </ol>
+      </section>
+
+      <section class="browse-section page-shell" aria-labelledby="browse-title">
+        <div class="section-heading">
+          <p class="section-number">03</p>
+          <h2 id="browse-title">学术记录</h2>
+          <p>Academic record</p>
+        </div>
+
+        <div class="browse-grid">
+          <a class="browse-card" href="publications/">
+            <span class="card-kicker">PUBLICATIONS</span>
+            <h3>学术论文发表</h3>
+            <p>记录已发表、已录用及在研的学术成果。</p>
+            <span class="card-link">查看论文记录 <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="browse-card" href="conferences/">
+            <span class="card-kicker">CONFERENCES</span>
+            <h3>参加的学术会议</h3>
+            <p>记录会议报告、学术交流与相关活动。</p>
+            <span class="card-link">查看会议记录 <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer page-shell">
+      <span>MU HAO · ACADEMIC PROFILE</span>
+      <span>© 2026</span>
+    </footer>
   </body>
 </html>
