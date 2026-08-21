@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="区域国别研究静态网站部署测试页">
+    <meta name="color-scheme" content="light">
+    <title>区域国别研究｜站点测试</title>
+    <style>
+      :root {
+        --background: #f3f1eb;
+        --surface: #faf9f5;
+        --ink: #1d2522;
+        --muted: #66706b;
+        --line: #d7d8d1;
+        --accent: #9b493f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--background);
+      }
+
+      body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        margin: 0;
+        color: var(--ink);
+        background:
+          linear-gradient(90deg, transparent 0 49.8%, rgba(29, 37, 34, 0.04) 49.8% 50.2%, transparent 50.2%),
+          var(--background);
+        font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      }
+
+      main {
+        width: min(1120px, calc(100% - 40px));
+        min-height: 100vh;
+        min-height: 100dvh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      header,
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 28px 0;
+        border-color: var(--line);
+        color: var(--muted);
+        font-size: 13px;
+        letter-spacing: 0.08em;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+      }
+
+      .brand {
+        color: var(--ink);
+        font-weight: 650;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+        align-items: center;
+        gap: clamp(48px, 8vw, 120px);
+        padding: 80px 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 24px;
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 10ch;
+        margin: 0;
+        font-size: clamp(48px, 8vw, 92px);
+        font-weight: 620;
+        letter-spacing: -0.07em;
+        line-height: 0.98;
+      }
+
+      .summary {
+        max-width: 36rem;
+        margin: 32px 0 0;
+        color: var(--muted);
+        font-size: clamp(16px, 2vw, 19px);
+        line-height: 1.8;
+      }
+
+      .status {
+        padding: 28px 0;
+        border-top: 1px solid var(--ink);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .status-label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 28px;
+        color: var(--muted);
+        font-size: 13px;
+        letter-spacing: 0.08em;
+      }
+
+      .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #527b62;
+        box-shadow: 0 0 0 5px rgba(82, 123, 98, 0.12);
+      }
+
+      .status strong {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: 650;
+      }
+
+      .status p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 760px) {
+        main {
+          width: min(100% - 32px, 1120px);
+        }
+
+        header,
+        footer {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 56px;
+          padding: 64px 0;
+        }
+
+        h1 {
+          max-width: 8ch;
+          font-size: clamp(48px, 16vw, 72px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="brand">AREA STUDIES</span>
+        <span>HONG KONG · OSS</span>
+      </header>
+
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Deployment test</p>
+          <h1 id="page-title">区域国别研究</h1>
+          <p class="summary">
+            这是网站的第一张测试页面，用于验证阿里云 OSS 静态托管、域名解析与 HTTPS 访问链路。
+          </p>
+        </div>
+
+        <aside class="status" aria-label="部署状态">
+          <p class="status-label"><span class="dot" aria-hidden="true"></span>部署状态</p>
+          <strong>静态页面已就绪</strong>
+          <p>当你通过自己的域名看到此页面，即表示基础部署成功。</p>
+        </aside>
+      </section>
+
+      <footer>
+        <span>AREASTUDIES.CN</span>
+        <span>INITIAL TEST PAGE · 2026</span>
+      </footer>
+    </main>
+  </body>
+</html>
