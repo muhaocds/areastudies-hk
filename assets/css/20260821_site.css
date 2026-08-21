@@ -511,6 +511,33 @@ h1 {
   line-height: 1.7;
 }
 
+.record-download {
+  margin: 18px 0 0;
+}
+
+.record-download a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-underline-offset: 4px;
+}
+
+.record-download a:hover,
+.record-download a:focus-visible {
+  color: var(--accent);
+}
+
+.record-download span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
 .record-status {
   justify-self: end;
   padding: 7px 10px;
